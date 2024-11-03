@@ -11,3 +11,8 @@ volume = altura * area_base
 
 print("Área da base:", area_base)
 print("O volume é: ", volume)
+
+saudacao = "Hello World!"
+
+print(saudacao[0])
+print(saudacao[0:4])
