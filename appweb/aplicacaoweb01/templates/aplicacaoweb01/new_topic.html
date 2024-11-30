@@ -1,0 +1,16 @@
+{% extends "aplicacaoweb01/base.html" %}
+
+{% block content %}
+
+    <form action="{% url 'new_topic' %}" method='post'>
+        <!--Primeira linha dentro do form Django obrigatória por segurança-->
+        {% csrf_token %}
+
+        <!--Formatação do formulário-->
+        {{ form.as_p }}
+
+        <button name="submit">Adicionar</button>
+
+    </form>
+
+{% endblock content %}
