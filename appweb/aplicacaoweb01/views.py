@@ -76,7 +76,7 @@ def edit_entry(request, entry_id):
             #Salvar as alterações na entrada
             form.save()
             #return topic(request, topic.id)
-            return HttpResponseRedirect(reverse('topic', args=[topic.id]))
+            return HttpResponseRedirect(reverse('topic', args=[topic.id])) # type: ignore
             #return HttpResponseRedirect(f'/topics/{topic.id}/')
     
     context = {'entry': entry, 'topic': topic, 'form': form}

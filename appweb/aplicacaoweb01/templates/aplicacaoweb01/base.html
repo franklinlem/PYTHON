@@ -1,5 +1,12 @@
+<p>
 <a href="{% url 'index' %}"><h1>Aplicação WEB com Django</h1></a>
 <a href="{% url 'topics' %}"><h3>Tópicos</h3></a>
+{%if user.is_authenticated%}
+    Olá, {{ user.username }}!
+{%else%}
+    <a href="{% url 'login' %}"><h3>Fazer Login</h3></a>
+{%endif%}
+</p>
 
 <!--TAG de Template do Django-->
 {% block content %}{% endblock content %}
