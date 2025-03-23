@@ -22,3 +22,7 @@ print('\nColoquei um novo som: \n', carro)
 
 carro['acessórios'][1]='som diferente'
 print('\nTroquei o modelo do som: \n', carro)
+
+#apagar um item de dicionário:
+del carro['acessórios']
+print("\nApaguei os acessórios.\n", carro)
