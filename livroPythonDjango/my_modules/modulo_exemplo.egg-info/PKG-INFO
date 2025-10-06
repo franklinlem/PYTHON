@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: modulo_exemplo
+Version: 1.0
+Summary: Calculo de areas simples
+Home-page: altabooks.com.br
+Author: Testes de Codigo
+Author-email: teste@teste.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
